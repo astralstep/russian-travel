@@ -5,10 +5,11 @@
   font-size: 24px;
   font-weight: 400;
   text-decoration: none;
+  transition: opacity 0.2s linear;
 }
 
 .langswitcher__lang-link:hover {
-  text-decoration: underline;
+  opacity: 0.8;
 }
 
 @media screen and (max-width: 767px) {

@@ -10,15 +10,15 @@
     <div class="page">
         <header class="header">
             <img class="logo" src="./images/header-logo.svg" alt="Логотиа в виде карты России.">
-            <div class="langswitcher">
-                <a href="#" class="langswitcher__lang-link">Ru</a>
-                <a href="#" class="langswitcher__lang-link">En</a>
-            </div>
+            <ul class="langswitcher">
+                <li class="langswitcher__lang-link"><a href="#" class="langswitcher__lang-link langswitcher__lang-link_active">Ru</a></li>
+                <li class="langswitcher__lang-link"><a href="#" class="langswitcher__lang-link">En</a></li>
+            </ul>
         </header>
         <main class="content">
             <section class="lead">
                 <h1 class="lead__title">Путешествия по России</h1>
-                <h2 class="lead__subtitle">Настоящая страна не в выпусках новостей, а здесь.</h2>
+                <p class="lead__subtitle">Настоящая страна не в выпусках новостей, а здесь.</p>
                 <img class="lead__image" src="./images/lead-polka.jpg" alt="Девушка спит в поезде.">
                 <p class="lead__caption">ваша полка — верхняя</p>
             </section>
@@ -34,11 +34,11 @@
                      усадила их в свою «Ладу» и проехала 20 тысяч километров по родной стране.
                      Мы выбрали и описали некоторые интересные места, достойные вашего отпуска.</p>
                 <ul class="intro__list">
-                    <li class="intro__item"><span class="intro__item_bold">Часовых поясов</span> 11</li>
-                    <li class="intro__item"><span class="intro__item_bold">Объектов природного наследия ЮНЕСКО</span> 12</li>
-                    <li class="intro__item"><span class="intro__item_bold">Объектов культурного наследия ЮНЕСКО</span> 16</li>
-                    <li class="intro__item"><span class="intro__item_bold">Природных заповедников</span> 105</li>
-                    <li class="intro__item"><span class="intro__item_bold">Аэропортов</span> 241</li>
+                    <li class="intro__item"><span class="intro__item-bold">Часовых поясов</span> 11</li>
+                    <li class="intro__item"><span class="intro__item-bold">Объектов природного наследия ЮНЕСКО</span> 12</li>
+                    <li class="intro__item"><span class="intro__item-bold">Объектов культурного наследия ЮНЕСКО</span> 16</li>
+                    <li class="intro__item"><span class="intro__item-bold">Природных заповедников</span> 105</li>
+                    <li class="intro__item"><span class="intro__item-bold">Аэропортов</span> 241</li>
                 </ul>
             </section>
             <section class="photo-grid">
@@ -56,7 +56,7 @@
                 <img src="./images/photo-grid-ergaki.jpg" alt="Густой туман вокруг каменного выступа в горах." class="photo-grid__item">
             </section>
             <section class="places">
-                <div class="place">
+                <article class="place">
                     <h2 class="place__title">Куршская коса</h2>
                     <img class="place__image" src="./images/place-kosa.jpg" alt="Мелкий берег, разбросаны камни и коряги.">
                     <div class="place__website">
@@ -76,8 +76,8 @@
                             окуная в спокойствие природы и запах стального, прохладного моря.
                         </p>
                     </div>
-                </div>
-                <div class="place">
+                </article>
+                <article class="place">
                     <h2 class="place__title">Кольский</h2>
                     <img class="place__image" src="./images/place-kolsky.jpg" alt="Обледеневшие невысокие скалы.">
                     <div class="place__website">
@@ -95,8 +95,8 @@
                             в Мурманск.
                         </p>
                     </div>
-                </div>
-                <div class="place">
+                </article>
+                <article class="place">
                     <h2 class="place__title">Алтай</h2>
                     <img class="place__image" src="./images/place-altai.jpg" alt="Открытый ноутбук на фоне леса.">
                     <div class="place__website">
@@ -115,8 +115,8 @@
                             а на равнинах пасутся косули. И знаменитые манулы — тоже обитатели Алтайского края.
                         </p>
                     </div>
-                </div>
-                <div class="place">
+                </article>
+                <article class="place">
                     <h2 class="place__title">Зимний Байкал</h2>
                     <img class="place__image" src="./images/place-winter-baikal.jpg" alt="Макросъемка льда.">
                     <div class="place__website">
@@ -133,8 +133,8 @@
                             «Байкальская миля» был поставлен мировой рекорд — 197.011 км/ч.
                         </p>
                     </div>
-                </div>
-                <div class="place">
+                </article>
+                <article class="place">
                     <h2 class="place__title">Карелия</h2>
                     <img class="place__image" src="./images/place-karelia.jpg" alt="Вид на водоем сквозь листву.">
                     <div class="place__website">
@@ -145,7 +145,7 @@
                             В девственном лесу на сотню километров не встретишь тропы. А на редких тропинках деревья 
                             в паре метров от земли помечены медвежьими когтями. Чтобы все знали, кто тут хозяин.
                         </p>
-                    </div>
+                </article>
             </section>
             <section class="cover">
                 <a class="cover__overlay" href="https://stampsy.com/na-elektrichkakh-do-baikala" target="_blank">
@@ -155,13 +155,13 @@
             </section>
         </main>
         <footer class="footer">
-            <div class="footer__links">
+            <nav class="footer__links">
                 <a class="footer__link" href="https://yandex.ru/maps" target="_blank">Карты</a>
                 <a class="footer__link" href="https://yandex.ru/pogoda" target="_blank">Погода</a>
                 <a class="footer__link" href="https://rasp.yandex.ru" target="_blank">Расписание</a>
                 <a class="footer__link" href="https://calendar.yandex.ru" target="_blank">Календарь</a>
                 <a class="footer__link" href="https://travel.yandex.ru" target="_blank">Путешествия</a>
-            </div>
+            </nav>
             <p class="footer__copyright">&copy; 2020. Впишите своё имя</p>
         </footer>
     </div>
