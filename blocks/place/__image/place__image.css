@@ -1,20 +1,17 @@
 .place__image {
   max-width: 460px;
-  max-height: 460px;
   grid-area: image;
 }
 
 @media screen and (max-width: 1279px) {
   .place__image {
     max-width: 440px;
-    max-height: 440px;
   }
 }
 
 @media screen and (max-width: 1023px) {
   .place__image {
     max-width: 340px;
-    max-height: 340px;
   }
 }
 
@@ -22,5 +19,10 @@
   .place__image {
     width: 100vw;
     margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 360px) {
+  .place__image {
+    max-width: 99.5%;
   }
 }
